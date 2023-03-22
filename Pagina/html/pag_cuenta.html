@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo_cuenta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cuenta - Ferreteria G&M</title>
+</head>
+
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido(a) a Ferreteria G&M</h2>
+                <p>¿Ya tienes cuenta?, inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form name="form" action="conexion_bd.php" method="post" class="formulario">
+            <h2 class="create-account">Registro de Cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i> 
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Llena los campos para crear tu cuenta</p>
+            Nombre:<input type="text" placeholder="" required><p>
+            Contraseña:<input type="password" placeholder="" required>
+            Correo electronico:<input type="email" placeholder="" required>
+            Numero telefonico:<input type="tel" placeholder="" required>
+            <label for="start">Fecha de nacimiento:</label required>
+            <input type="date" id="start" name="trip-start"> 
+            <input href="/html/pag_error400.html" type="submit" value="Registrar">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido(a) a Ferreteria G&M</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/pag_cuenta.js"></script>
+</body>
+
+</html>
